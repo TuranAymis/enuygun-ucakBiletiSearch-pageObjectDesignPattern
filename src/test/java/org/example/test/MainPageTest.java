@@ -16,7 +16,7 @@ public class MainPageTest extends BaseTest {
 
     @Test
     public void test() {
-        mainPage.clickGidisDonus().sendNereden().clickOnerilenIlk().sendNereye().clickOnerilenIlk().clickGidisTarih().clickGidisGunSec().clickDonusTarih().clickDonusGunSec().clickYolcuSayisi().clickYolcuSayisiArttir().clickBusinessSec().clickAktarmasiz().clickBiletBul().ikinciSayfaKontrol();
+        mainPage.clickGidisDonus().sendNereden().clickOnerilenIlk().sendNereye().clickOnerilenIlk().clickGidisTarih().clickGidisGunSec().clickDonusTarih().clickDonusGunSec().clickYolcuSayisi().clickYolcuSayisiArttir().clickBusinessSec().clickAktarmasiz().clickBiletBul().findIkinciSayfaKontrol();
     }
 
     @After

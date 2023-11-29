@@ -63,7 +63,7 @@ public class MainPage extends BasePage {
         click(CLICK_BILET_BUL);
         return this;
     }
-    public MainPage ikinciSayfaKontrol() {
+    public MainPage findIkinciSayfaKontrol() {
         findElement(IKINCI_SAYFA_KONTROL);
         return this;
     }
