@@ -16,11 +16,11 @@ public class MainPageTest extends BaseTest {
 
     @Test
     public void test() {
-        mainPage.sendNereden().sendNereye().sendGidisTarih().sendDonusTarih().sendYolcuSayisi().clickAktarmasiz().clickBiletBul();
+        mainPage.clickGidisDonus().sendNereden().clickOnerilenIlk().sendNereye().clickOnerilenIlk().clickGidisTarih().clickGidisGunSec().clickDonusTarih().clickDonusGunSec().clickYolcuSayisi().clickYolcuSayisiArttir().clickBusinessSec().clickAktarmasiz().clickBiletBul().ikinciSayfaKontrol();
     }
 
     @After
     public void after() {
-
+        tearDown();
     }
 }
