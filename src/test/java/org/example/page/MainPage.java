@@ -7,9 +7,6 @@ import static org.example.Constants.ConstantMainPage.*;
 
 public class MainPage extends BasePage {
 
-    //Parametrik istediği için değişken tanımladım
-    String gidisSehir = "Ankara";
-    String donusSehir = "İstanbul";
 
     //testte kullanıcak elemtleri nasıl kullanacaksam ona göre tanımladım
     public MainPage(WebDriver driver){
@@ -19,7 +16,7 @@ public class MainPage extends BasePage {
         click(GIDIS_DONUS);
         return this;
     }
-    public MainPage sendNereden() {
+    public MainPage sendNereden(String gidisSehir) { //Parametrik istendiği için değişken tanımladım
         sendKeys(NEREDEN, gidisSehir);
         return this;
     }
@@ -27,7 +24,7 @@ public class MainPage extends BasePage {
         click(ONERILEN_ILK);
         return this;
     }
-    public MainPage sendNereye() {
+    public MainPage sendNereye(String donusSehir) { //Parametrik istendiği için değişken tanımladım
         sendKeys(NEREYE, donusSehir);
         return this;
     }

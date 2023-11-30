@@ -15,12 +15,13 @@ public class MainPageTest extends BaseTest {
     }
 
     @Test //test casei
-    public void test() {
-        mainPage.clickGidisDonus().sendNereden().clickOnerilenIlk().sendNereye().clickOnerilenIlk().clickGidisTarih().clickGidisGunSec().clickDonusTarih().clickDonusGunSec().clickYolcuSayisi().clickYolcuSayisiArttir().clickBusinessSec().clickAktarmasiz().clickBiletBul().findIkinciSayfaKontrol();
+    public void test() { //gidiş-donüş şehirleri buradan girilebiliyor.
+        mainPage.clickGidisDonus().sendNereden("Ankara").clickOnerilenIlk().sendNereye("İstanbul").clickOnerilenIlk().clickGidisTarih().clickGidisGunSec().clickDonusTarih().clickDonusGunSec().clickYolcuSayisi().clickYolcuSayisiArttir().clickBusinessSec().clickAktarmasiz().clickBiletBul().findIkinciSayfaKontrol();
     }
 
     @After //testten sonra başlatılır
     public void after() {
+
         tearDown();
     }
 }
