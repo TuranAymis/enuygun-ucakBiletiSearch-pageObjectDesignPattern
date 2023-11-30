@@ -1,7 +1,7 @@
 package org.example.Constants;
 import org.openqa.selenium.By;
 
-public class ConstantMainPage {
+public class ConstantMainPage { //testte kullanıcak elementleri tanımladık
     public static final By GIDIS_DONUS = By.xpath("//label[@data-testid='search-round-trip-label']");
     public static final By NEREDEN = By.xpath("//input[@data-testid='endesign-flight-origin-autosuggestion-input']");
     public static final By NEREYE = By.xpath("//input[@data-testid='endesign-flight-destination-autosuggestion-input']");

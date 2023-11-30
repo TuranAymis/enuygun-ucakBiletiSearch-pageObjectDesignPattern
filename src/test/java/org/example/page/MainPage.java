@@ -6,8 +6,12 @@ import org.openqa.selenium.WebDriver;
 import static org.example.Constants.ConstantMainPage.*;
 
 public class MainPage extends BasePage {
+
+    //Parametrik istediği için değişken tanımladım
     String gidisSehir = "Ankara";
     String donusSehir = "İstanbul";
+
+    //testte kullanıcak elemtleri nasıl kullanacaksam ona göre tanımladım
     public MainPage(WebDriver driver){
         super(driver);
     }

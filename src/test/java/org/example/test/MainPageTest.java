@@ -9,17 +9,17 @@ import org.junit.Test;
 public class MainPageTest extends BaseTest {
     MainPage mainPage;
 
-    @Before
+    @Before //testten önce başlatılır
     public void before() {
         mainPage = new MainPage(getWebDriver());
     }
 
-    @Test
+    @Test //test casei
     public void test() {
         mainPage.clickGidisDonus().sendNereden().clickOnerilenIlk().sendNereye().clickOnerilenIlk().clickGidisTarih().clickGidisGunSec().clickDonusTarih().clickDonusGunSec().clickYolcuSayisi().clickYolcuSayisiArttir().clickBusinessSec().clickAktarmasiz().clickBiletBul().findIkinciSayfaKontrol();
     }
 
-    @After
+    @After //testten sonra başlatılır
     public void after() {
         tearDown();
     }
